@@ -10,11 +10,48 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:padding="23sp"
+        android:text="LOGIN"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.5" />
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter Your Name"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="97dp"
+        tools:layout_editor_absoluteY="118dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter Your Password"
+        android:inputType="textPersonName"
+        android:text="Name"
+        tools:layout_editor_absoluteX="98dp"
+        tools:layout_editor_absoluteY="256dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        tools:layout_editor_absoluteX="157dp"
+        tools:layout_editor_absoluteY="422dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10sp"
+        android:text="Register"
+        tools:layout_editor_absoluteX="172dp"
+        tools:layout_editor_absoluteY="575dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
