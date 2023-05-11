@@ -28,15 +28,14 @@
                 android:src="@mipmap/ic_launcher"/>
 
             <EditText
+                android:id="@+id/login_email"
                 android:layout_width="300dp"
                 android:layout_height="60dp"
                 android:layout_gravity="center"
-                android:id="@+id/login_email"
                 android:layout_marginTop="30dp"
-                android:padding="8dp"
-                android:hint="Email"
                 android:drawablePadding="8dp"
-                />
+                android:hint="StartUp Name"
+                android:padding="8dp" />
 
             <EditText
                 android:layout_width="300dp"
@@ -60,6 +59,13 @@
                 android:textSize="18sp"
                 android:text="Login"
                 app:cornerRadius = "30dp"/>
+            <TextView
+                android:id="@+id/register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:text="Register" />
 
         </LinearLayout>
 

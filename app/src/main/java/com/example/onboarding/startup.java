@@ -1,5 +1,6 @@
 package com.example.onboarding;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -7,14 +8,26 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 
 public class startup extends Fragment {
-
+    TextView e;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_startup, container, false);
+        View v =  inflater.inflate(R.layout.fragment_startup, container, false);
+
+        e = v.findViewById(R.id.register);
+
+        e.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getActivity(),SignUp.class);
+                startActivity(i);
+            }
+        });
+        return v;
     }
 }
